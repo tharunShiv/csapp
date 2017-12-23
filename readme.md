@@ -7,6 +7,35 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+# ColSheet
+## csapp
+## What does this project do? ##
+      COLSHEET , provides users the following features,
+        - provide the members to share their pulications
+        - read each others' articles instantly
+        - rofessionally write Articles or Provide a Link to them
+        - Update and Learn Information about Workshops, Seminars conducted by a Specific person 
+        - To get Notified about these important events
+
+## How is it set up? ##
+        1. HTML
+        2. CSS
+        3. Bootstrap - Framework
+        4. JavaScript
+        5. PHP
+        6. MySql
+        7. Laravel - PHP Framework
+
+## Contributing ## 
+      1. Fork it!
+      2. Create your feature branch: `git checkout -b my-new-feature`
+      3. Commit your changes: `git commit -am 'Add some feature'`
+      4. Push to the branch: `git push origin my-new-feature`
+      5. Submit a pull request :simple_smile:
+      
+# Thank You For Making Us Better :smiley: #
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
