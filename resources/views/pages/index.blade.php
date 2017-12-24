@@ -28,15 +28,20 @@
 
     <div class="container">
 		 <div class="row">
-			 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-sm-offset-4 ">
-	            <a href="regp.php"><button class="btn middle-index-button" >Create an Account - Scholars</button></a>
-        </div>
-			</div>
-			
-		 </div>
-			</div>
+			 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-sm-offset-2 ">
+	            <a href="/register"><button class="btn middle-index-button" >Create an Account - Scholars</button></a>
+             </div>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4  ">
+				   <a href="/login"><button class="btn middle-index-button" >Scholar Login</button></a>
+		    </div>
 		</div>
-<br/><br/>
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-sm-offset-4 ">
+				<a href="/posts"><button class="btn middle-index-button" >View All Posts</button></a>
+        	</div>
+		</div>				
+	</div>
+<br/>
 					<div class="container">
              <form class="form-inline" method="POST" action="searchresults1.php" target="_blank">
 							 <div class="row">

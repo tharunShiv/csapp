@@ -17,6 +17,10 @@ header{
 
 }
 
+.icon-bar{
+    color:#1ec87e;
+}
+
 .search-index{
     width:100% !important;
 }
@@ -69,7 +73,7 @@ header{
     padding:15px;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 10px;
+    
 
 }
 
@@ -89,8 +93,7 @@ header{
     border-left:2px solid #1ec87e;
     border-right:1px solid #1ec87e;
     border-top:1px solid #1ec87e;
-    border-bottom:2px solid #1ec87e;
-    
+    border-bottom:2px solid #1ec87e; 
     margin-bottom:10px;
 
 }
@@ -210,7 +213,46 @@ fieldset{
 
   }
 
+  .navbar-toggle{
+      font-size: 32px;
+      padding:0 !important;
+      margin-top: 20px !important;
+      margin-bottom: 0px !important;
+  }
 
+
+
+
+
+  @media screen and (max-width:767px){
+    .header-buttons{
+        width:99%;
+    }
+  }
+
+  @media screen and (max-width:600px){
+    div.w3-content.w3-section{
+        width:120% !important;
+        margin-left:-10%;
+        
+    }
+  }
+
+  @media screen and (max-width:380px){
+    div.w3-content.w3-section{
+        width:130% !important;
+        margin-left:-15%;
+        
+    }
+  }
+
+  @media screen and (max-width:300px){
+    div.w3-content.w3-section{
+        width:140% !important;
+        margin-left:-20%;
+        
+    }
+  }
 /*#reg{
 	border:1px solid #1ec87e ;
 
