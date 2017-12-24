@@ -1,0 +1,283 @@
+﻿
+a{
+    color:#1ec87e;
+    text-decoration: none;
+}
+body{
+    font-family:helvetica;
+    background-image: url('../image/bg7.png');
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+header{
+
+    width:100%;
+    border-left:4px solid #1ec87e;
+    text-align: center;
+
+
+}
+
+
+
+.name{
+
+    padding:12px;
+    margin-left:2%;
+}
+
+a{
+    color:#1ec87e;
+    text-decoration: none;
+}
+.buttons{
+    display:inline-block;
+    float:right;
+    padding:12px;
+   margin-right:0px;
+
+    margin-top:1.9%;
+    width:82%;
+
+}
+.buttons form{
+    display:inline-block;
+     width:40%;
+     float:right;
+}
+
+
+.header-buttons{
+  float:right;
+    width:20%;
+    border:2px solid #1ec87e;
+    border-radius:30px;
+    background-color:#1ec87e;
+    color:white;
+    font-weight:bold;
+    height:25px;
+    display:inline-block;
+}
+.header-search{
+
+
+display:inline-block;
+    padding:10px;
+
+    border-left:2px solid #1ec87e;
+    border-right:1px solid #1ec87e;
+    border-top:1px solid #1ec87e;
+    border-bottom:2px solid #1ec87e;
+    border-radius:30px;
+
+}
+
+
+.header-buttons:hover{
+    background-color:white;
+    color:#1ec87e;
+    border:2px solid #1ec87e;
+}
+
+.middle-index-button{
+    width:20%;
+    border:2px solid #1ec87e;
+    border-radius:30px;
+    background-color:#1ec87e;
+    color:white;
+    font-weight:bold;
+    padding:15px;
+    text-align: center;
+    margin-top:1.5%;
+    margin-left:40%;
+
+}
+
+.middle-index-button:hover{
+    background-color:white;
+    color:#1ec87e;
+    border:2px solid #1ec87e;
+}
+
+
+
+.header-search:focus{
+   outline:none;
+
+    border-left:5px solid #1ec87e;
+    border-bottom:5px solid #1ec87e;
+}
+
+.search-button-index{
+
+    border:2px solid #1ec87e;
+    border-radius:30px;
+    background-color:#1ec87e;
+    color:white;
+    font-weight:bold;
+    padding:9px;
+
+    text-align: center;
+
+
+}
+
+.search-button-index:hover{
+    background-color:white;
+    color:#1ec87e;
+    border:2px solid #1ec87e;
+}
+
+.upbutton{
+
+  border:2px solid #1ec87e;
+  border-radius:30px;
+  background-color:#1ec87e;
+  color:white;
+  font-weight:bold;
+  padding:2px;
+  text-align: center;
+
+}
+.upbutton:hover{
+  background-color:white;
+  color:#1ec87e;
+  border:2px solid #1ec87e;
+}
+.w3-animate-fade{animation:fading 15s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+
+
+.w3-animate-fade{
+    border-top:3px solid #1ec87e;
+    border-bottom:3px solid #1ec87e;
+    border-left:8px solid #1ec87e;
+    border-right:8px solid #1ec87e;
+    margin-left:-0.7%;
+
+}
+
+.container-index{
+    width:100%;
+    display:inline-block;
+}
+
+.index-bottom-image{
+    width:70%;
+    border-radius:300px;
+}
+
+.index-bottom-image:hover{
+    width:80%;
+    border-radius:300px;
+}
+
+
+/*
+.left{
+    display:inline-block;
+    float:left;
+    width:30%;
+    margin-left:7%;
+}
+.middle{
+    display:inline-block;
+width:30%;
+    margin-left:2%;
+}
+.right{
+    display:inline-block;
+    float:right;width:30%;
+}
+
+
+fieldset{
+	border:1px solid #1ec87e ;
+	background-color:lightblue;
+	width:25%;
+	margin:auto;
+
+	margin-top:70px;
+	 border-radius:30px;
+}
+fieldset{
+font-family: helvetica;
+}
+
+.left{
+
+width:20%;
+float:right;
+margin-left:0px;
+display:inline-block;
+border:1px solid black;
+height:350px;
+}
+
+aside{
+
+border:1px solid black;
+width:22%;
+float:left;
+display:inline-block;
+min-height:700px;
+
+}
+
+.main-middle{
+  width: 50%;
+  border:2px solid green;
+    display:inline-block;
+  margin:auto;
+  padding:20px;
+  margin-left:2%;
+
+}
+
+.main-middle h2{
+  color:#1ec87e;
+}
+*/
+.alertmsg{
+  width:99%;
+  margin:auto;
+  margin-top:5%;
+  border:2px solid green;
+  background-color:#b3ffb3;
+  padding:1px;
+  text-align: center;
+  display:inline-block;
+
+}
+
+
+.profilepic{
+  width:200px;
+  display:block;
+   margin-left:auto;
+   margin-right:auto;
+   border-radius:100%;
+   height:200px;
+   border:5px dotted #1ec87e;
+   border-bottom:5px dotted green;
+   border-left:7px dotted green;
+}
+
+.eprofilep{
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  border-radius:100%;
+  width:200px;
+  height:200px;
+  border:7px dotted #1ec87e;
+  border-bottom:7px dotted green;
+  border-left:7px dotted green;
+}
+
+a:hover{
+    color:green;
+    text-decoration:underline;
+}
