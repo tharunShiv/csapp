@@ -15,5 +15,6 @@
             <p>No Recent Posts</p>
         @endif    
     </div>   
+    {{$posts->links()}}
 @endsection
    
