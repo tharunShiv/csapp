@@ -2,7 +2,7 @@
 @extends('layouts.app1')
 
 @section('content')
-    
+    <br/>
     <div class="container">
         <a href="/posts" class="btn btn-primary">Go Back</a>
         <h1>{{$post->title}}</h1>
