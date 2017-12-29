@@ -1,5 +1,5 @@
 
-@extends('layouts.app1')
+@extends('layouts.app')
 
 @section('content')
     
@@ -8,7 +8,7 @@
             @foreach($posts as $post)
                 <div class="well">
                     <h3><a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
-                    <small>Written on {{$post->created_at}} by </small>
+                    <small>Written on {{$post->created_at}} by {{$post->user->name}} - <a href="#">{{$post->user->username}}</a></small>
                 </div>
             @endforeach
         @else

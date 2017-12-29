@@ -7,6 +7,12 @@ use App\Post;
 
 class PostsController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth',['except' => ['index', 'show']]);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -52,6 +58,7 @@ class PostsController extends Controller
         } 
         $post->title = $request->input('title');
         $post->body = $request->input('body');
+        $post->user_id = auth()->user()->id;
         $post->save();
         return redirect('/posts')->with('success', 'Post Created');
     }
@@ -75,8 +82,14 @@ class PostsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
-    {
-        //
+    {   
+        
+        $post = Post::find($id);
+        if((auth()->user()->id) !== $post->user_id){
+            return redirect('/posts')->with('error', 'Unauthorized Page');
+        }
+        
+        return view('posts.edit')->with('post', $post);
     }
 
     /**
@@ -88,7 +101,26 @@ class PostsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        
+         //validate
+         $this->validate($request, [
+            'title' => 'required',
+            'body' => 'required',
+        ]);
+        $post = Post::find($id);
+        if((auth()->user()->id) !== $post->user_id){
+            return redirect('/posts')->with('error', 'Unauthorized Page');
+        }
+        if($request->input('url') !== NULL){
+            $post->file_url = $request->input('url');    
+        } 
+        if($request->input('date') !== NULL){
+            $post->date = $request->input('date');    
+        } 
+        $post->title = $request->input('title');
+        $post->body = $request->input('body');
+        $post->save();
+        return redirect('/posts')->with('success', 'Post Updated');
     }
 
     /**
@@ -98,7 +130,13 @@ class PostsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
-    {
-        //
+    {   
+        
+        $post = Post::find($id);
+        if((auth()->user()->id) !== $post->user_id){
+            return redirect('/posts')->with('error', 'Unauthorized Page');
+        }
+        $post->delete();
+        return redirect('/posts')->with('success', 'Post Removed');
     }
 }

@@ -47,7 +47,7 @@ header{
 }
 .header-buttons{
 
-    border:2px solid #1ec87e;
+    border:1px solid #1ec87e;
    
     background-color:#1ec87e;
     color:white;
@@ -143,7 +143,7 @@ header{
 .search-button-index:hover{
     background-color:white;
     color:#1ec87e;
-    border:2px solid #1ec87e;
+    border:1px solid #1ec87e;
 }
 */
 .w3-animate-fade{animation:fading 15s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
@@ -220,9 +220,21 @@ fieldset{
       margin-bottom: 0px !important;
   }
 
+ aside ul{
+    width:100%;
+    margin:0;
+    padding:0;
+}
 
+.panel-primary{
+    
+    border-color: #1ec87e;
+}
 
-
+.panel-heading{
+    background-color: #1ec87e !important;
+    color:white !important;
+}
 
   @media screen and (max-width:767px){
     .header-buttons{

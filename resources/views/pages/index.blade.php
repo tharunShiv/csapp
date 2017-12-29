@@ -3,7 +3,7 @@
 @section('content')
 
 
-	<br/>
+	
 	<div style="width:100%;margin:0;">
 <div class="container-fluid">
      <div class="w3-content w3-section" style="width:100%">
@@ -18,15 +18,11 @@
      <section>
 
 
-         <div class="middle-index">
-		 <?php if(isset($_GET['msg'])){?>
-			<div class="alertmsg">
-	           <p style="color:green;"> Status:<?php echo $_GET['msg']; ?></p>
-			</div>
-		<?php } ?><br/>
+         
 
 
     <div class="container">
+        <!-- @if(Auth::guest())
 		 <div class="row">
 			 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-sm-offset-2 ">
 	            <a href="/register"><button class="btn middle-index-button" >Create an Account - Scholars</button></a>
@@ -35,6 +31,7 @@
 				   <a href="/login"><button class="btn middle-index-button" >Scholar Login</button></a>
 		    </div>
 		</div>
+        @endif  -->
 		<div class="row">
 			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-sm-offset-4 ">
 				<a href="/posts"><button class="btn middle-index-button" >View All Posts</button></a>
@@ -57,7 +54,60 @@
      </section>
 
 <br/><br/>
+<section class="container">
+	<div class="row ">
+		<div class="col-12 col-sm-6 col-md-4">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					Most viewed Post
+				</div>
+				<div class="panel-body" style="text-align:center;">
+					<ul style="list-style-type:none;padding:0;">
+						<li><a href="#">Android</a></li>
+						<hr style="width:65%;margin:2px auto;border:0.5px solid #1ec87e;">
+						<li><a href="#">IOS</a></li>
+						<hr style="width:65%;margin:2px auto;border:0.5px solid #1ec87e;">
+						<li><a href="#">SpaceX</a></li>
+                    </ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-sm-6 col-md-4">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+                    Editors' Choice
+				</div>
+				<div class="panel-body" style="text-align:center">
+						<ul style="list-style-type:none;padding:0;">
+								<li><a href="#">Mental Health</a></li>
+								<hr style="width:65%;margin:2px auto;border:0.5px solid #1ec87e;">
+								<li><a href="#">IOS</a></li>
+								<hr style="width:65%;margin:2px auto;border:0.5px solid #1ec87e;">
+								<li><a href="#">Psychology</a></li>
+						</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-sm-6 col-md-4">
+				<div class="panel panel-primary" >
+				<div class="panel-heading">
+					Most Viewed Profile
+				</div>
+				<div class="panel-body" style="text-align:center">
+						<ul style="list-style-type:none;padding:0;">
+								<li><a href="#">Tharun</a></li>
+								<hr style="width:65%;margin:2px auto;border:0.5px solid #1ec87e;">
+								<li><a href="#">Umamaheswari</a></li>
+								<hr style="width:65%;margin:2px auto;border:0.5px solid #1ec87e;">
+								<li><a href="#">Shiv</a></li>
+							</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
+<!--
     <section>
 			<div class="container">
 
@@ -76,7 +126,7 @@
 
     </section>
 
-
+-->
 
 
 

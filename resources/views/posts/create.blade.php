@@ -14,7 +14,7 @@
 <div class="container" style="text-align:center;">
         
 <div class="row">
-<div class="col-xs-12 col-sm-4 col-md-4 ">
+        <div class="col-xs-12 col-sm-4 col-md-3 ">
 <aside style="border-left:1px solid #1ec87e">
      <h3 style="text-align:center;"> Welcome <span style="color:#1ec87e"> Username</span></h3> 
 <hr/>
@@ -22,6 +22,7 @@
 <h4>My Dashboard</h4>
 <li><a href="editp.php" style="color:#1ec87e;
     text-decoration: none;font-size:18px;">edit my profile</a></li>
+    <hr style="width:65%;margin:0 auto;">
 <li><a href="viewp.php" style="color:#1ec87e;
     text-decoration: none;font-size:18px;">view my profile</a></li>
 
@@ -31,6 +32,7 @@
 <h4>publications</h4>
 <li><a href="mypublications.php" style="color:#1ec87e;
     text-decoration: none;font-size:18px;">my publications</a></li>
+    <hr style="width:65%;margin:0 auto;">
 <li><a href="" style="color:#1ec87e;
     text-decoration: none;font-size:18px;">co scholar publications</a></li>
 
@@ -39,6 +41,7 @@
 <h4>Co-Scholars</h4>
 <li><a href="" style="color:#1ec87e;
     text-decoration: none; font-size:18px;">view my co scholars</a></li>
+    <hr style="width:65%;margin:0 auto;">
 <li><a href="" style="color:#1ec87e;
     text-decoration: none;font-size:18px;">explore co scholars</a></li>
 
@@ -48,25 +51,8 @@
 
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="col-xs-12  col-sm-8 " style="text-align:left;">
+<h1>Create Post</h1>
+<div class="col-xs-12 col-sm-8 col-md-9 " style="text-align:left;">
         <div style="text-align:center">
             @include('inc.messages')
         </div>

@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-fluid">
         <header>
                   <!--<img src="" alt="logo to come">
                 -->
@@ -11,6 +11,35 @@
              </button>
              <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav navbar-right">
+                    @guest
+                    <li><a class="header-b" href="{{ route('login') }}"><button class="header-buttons btn" >Login</button></a></li>
+                    <li><a class="header-b" href="{{ route('register') }}"><button class="header-buttons btn" >Register</button></a></li>
+                @else
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle header-b" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+                       <button class="header-buttons btn"> {{ Auth::user()->name }} <span class="caret"></span> </button>
+                    </a>
+                    
+
+                    <ul class="dropdown-menu">
+                        <!--User added Dashboard link -->
+                        <li>
+                          <a href="/home" >Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                         document.getElementById('logout-form').submit();">
+                                Logout
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+                @endguest
                 <li><a class="header-b" href="/about"><button class="header-buttons btn" >About</button></a></li>
                 <li><a class="header-b" href="/contact"><button class="header-buttons btn" >Contact</button></a></li>
                 </ul>
