@@ -8,7 +8,7 @@
                   <div class="row">
                     <div class="col-xs-12 col-sm-4 col-md-3 " style="text-align:center;margin-bottom:5%;">
                         <aside style="border-left:1px solid #1ec87e">
-                            <h3 style="text-align:center;"> Welcome <span style="color:#1ec87e"> Username</span></h3> 
+                            <h3 style="text-align:center;"> Welcome <span style="color:#1ec87e">{{auth()->user()->name}}</span></h3> 
                         <hr/>
                         <ul style="list-style-type:none;">
                         <h4>My Dashboard</h4>
