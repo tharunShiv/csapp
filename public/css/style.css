@@ -8,6 +8,8 @@
 }
 .navbar{
     width:100%;
+    padding:0;
+    margin:0;
 }
 header{
     display:inline-block;
@@ -31,7 +33,8 @@ header{
 .name{
     display:inline-block;
     
-    padding:12px;
+    padding:1em;
+    width:30%;
    
 }
 
@@ -236,9 +239,17 @@ fieldset{
     color:white !important;
 }
 
+div.panel-body ul li a{
+    color:black;
+}
+
   @media screen and (max-width:767px){
     .header-buttons{
         width:99%;
+    }
+    
+    .name{
+        width:70%;
     }
   }
 
@@ -248,6 +259,7 @@ fieldset{
         margin-left:-10%;
         
     }
+
   }
 
   @media screen and (max-width:380px){
@@ -255,6 +267,11 @@ fieldset{
         width:130% !important;
         margin-left:-15%;
         
+    }
+    .name{
+        width:80%;
+        padding-left:5px;
+        padding-right:5px;
     }
   }
 

@@ -18,7 +18,7 @@
 <aside style="border-left:1px solid #1ec87e">
      <h3 style="text-align:center;"> Welcome <span style="color:#1ec87e"> Username</span></h3> 
 <hr/>
-<ul style="list-style-type:none;">
+<!--<ul style="list-style-type:none;">
 <h4>My Dashboard</h4>
 <li><a href="editp.php" style="color:#1ec87e;
     text-decoration: none;font-size:18px;">edit my profile</a></li>
@@ -45,7 +45,7 @@
 <li><a href="" style="color:#1ec87e;
     text-decoration: none;font-size:18px;">explore co scholars</a></li>
 
-
+-->
 
 </aside>
 
